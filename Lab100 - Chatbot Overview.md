@@ -20,7 +20,7 @@ P](media/15153914320994/Screen%20Shot%202018-01-08%20at%203.22.17%20PM.png)￼
 MasterBot을 import 해 주세요. import 버튼 클릭후, labfiles.zip 파일의
 labfiles/code 디렉토리에있는 MasterBot.json 파일을 import 하면 됩니다.
 ~~~
-위에 위치에 없을 시
+MinD3D: 위에 위치에 없을 시
 labfiles\MasterBot_Korean\MasterBot 내부 import.zip을 참고합니다
 ~~~
 ![Screen Shot 2018-01-08 at 3.28.46

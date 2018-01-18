@@ -6,13 +6,19 @@ Lab300 - Custom Component 구현, 수정 및 연결
 labfiles/code에서 확인 해 주세요. zip 을 풀어주세요.
 
 -   samples-service-balances.zip
+~~~
+minD3D: 위의 zip이 없다면 labfiles\samples-service-balances 가 압축이 풀린 디렉토리입니다
+~~~
 
 **Step 1: Banking Bot에서 Get Balance 서비스 연결하기**
 =======
 
 ### 1.  sample-service-balances의 디렉토리로 이동 해 주세요.
+~~~
+ex) cd C:\ChatBot_Workshop\labfiles\samples-service-balances
+~~~
 ### 2.  npm install을 command 창에 쳐 주세요. node\_modules이라는 폴더가 생길 것 입니다.
-### 3.  node index.js 로 index 파일을 실행 시켜 주세요. 아래와 같은 화면이 나오면 성공적으로 실행 시키신 것입니다.
+### 3.  node index.js 를 command 창에 입력하여 index 파일을 실행 시켜 주세요. 아래와 같은 화면이 나오면 성공적으로 실행 시키신 것입니다.
 
         components.js create console logger
         shell.js create console logger
@@ -20,6 +26,14 @@ labfiles/code에서 확인 해 주세요. zip 을 풀어주세요.
 
 ### 4.  로컬에서 실행 중인 서비스를 Bot에서 연결 합니다. 
 ![Screen Shot 2018-01-09 at 11.59.42A](media/15154655408142/Screen%20Shot%202018-01-09%20at%2011.59.42%20AM.png)
+
+~~~
+minD3D: 과정에서 ngrok을 통해 서버에 온라인으로 접근 가능하도록 합니다.
+ex) ngrok.exe 내에 창에 
+ngrok http 3000
+->3000은 로컬 내에서 실행한 index.js의 포트여야 합니다.
+이때 url+ /components 를 Metadata URL에 넣습니다.
+~~~
 
 ### 5.  서비스 등록 후에는 이렇게 나옵니다.
 ![Screen Shot 2018-01-09 at 1.38.40P](media/15154655408142/Screen%20Shot%202018-01-09%20at%201.38.40%20PM.png)
@@ -50,7 +64,9 @@ labfiles/code에서 확인 해 주세요. zip 을 풀어주세요.
 =======
 
 ### 1.  가장 편한 Editor 에서 balance\_retrieval을 열어주세요.
-
+~~~
+minD3D: labfiles\samples-service-balances\banking 에 있습니다.
+~~~
 ![Screen Shot 2018-01-09 at 2.44.12P](media/15154655408142/Screen%20Shot%202018-01-09%20at%202.44.12%20PM.png)
 
 ### 2.  신용카드 선택시 대답 하는 말을 수정 해 보겠습니다.
